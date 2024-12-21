@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <style>
+        /* Style de la navbar */
+        .navbar {
+            transition: all 0.3s ease;
+        }
+    
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+        }
+    
+        .navbar-brand:hover {
+            color: #1e90ff;
+        }
+    
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+    
+        .nav-link:hover {
+            color: #1e90ff;
+        }
+    
+        .navbar-toggler-icon {
+            background-color: #1e90ff;
+        }
+    
+        /* Formulaire de recherche */
+        .form-control {
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+    
+        .d-flex {
+            align-items: center;
+        }
+    
+        /* Navbar responsive (mobile) */
+        @media (max-width: 992px) {
+            .navbar-nav {
+                text-align: center;
+            }
+    
+            .navbar-nav .nav-link {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+        }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="style/bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.css">
+    <style>
+        /* Style global */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style du footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #1e90ff; /* Couleur au survol */
+        }
+
+        /* Icônes sociales */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #444;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #1e90ff;
+        }
+
+        /* Section principale */
+        main {
+            padding: 60px 0; /* Ajout d'espace pour la navbar fixe */
+        }
+
+        /* Section de compétences */
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #skills li {
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo et titre -->
+            <a class="navbar-brand" href="#">RDC Horizons Voyages</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSei_m1mhLUn8A6ch1WfPmxNPgWOZJnxxlcH0jWtNFd18q2y2A/viewform?embedded=true" target="_blank">S'inscrire</a>
+                    </li>
+                </ul>
+
+                <!-- Formulaire de recherche -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Recherche">
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <img src="img/iii.jpg" alt="Mon profil" class="profile-img">
+                <h1>Bonjour, je suis <span>Grady Isaac Pario</span></h1>
+                <p>Développeur Web et Desktop passionné par le code et la création de sites web interactifs.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Je suis un étudiant à la faculté des sciences économiques et gestion, département de l'information appliquée à la gestion des entreprises.</p>
+            <p>Je suis un développeur spécialisé en HTML, CSS, PHP, ainsi qu'en développement d'applications desktop avec C#.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Mes Compétences</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Git et GitHub</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p>Pour toute question ou projet, vous pouvez me contacter à l'adresse suivante :</p>
+            <p><a href="mailto:gradisinguila@gmail.com">gradisinguila@gmail.com</a></p>
+            <p><a href="https://github.com/gradi243" target="_blank">GitHub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Isaac Pario Grady, étudiant à l'UAC.</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/+243813920740" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/+243813920740" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/gradi243" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://t.me/+243813920740" target="_blank" title="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
