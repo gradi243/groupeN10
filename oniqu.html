@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enregistrement des Nouveau-nés - Centre Hospitalier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+        main {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1rem;
+            color: #555;
+        }
+        input, select, textarea {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            margin-top: 1.5rem;
+            padding: 0.75rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: auto;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+        .contacts, .contributors {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contacts li, .contributors li {
+            margin: 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>bienvenu sur la page de onique</h1>
+    <header>
+        <h1>Centre Hospitalier de Butembo</h1>
+        <h2>Enregistrement des Nouveau-nés</h2>
+    </header>
+    <main>
+        <form>
+            <label for="nom">Nom du nouveau-né :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required>
+
+            <label for="sexe">Sexe :</label>
+            <select id="sexe" name="sexe" required>
+                <option value="masculin">Masculin</option>
+                <option value="féminin">Féminin</option>
+            </select>
+
+            <label for="poids">Poids à la naissance (kg) :</label>
+            <input type="number" id="poids" name="poids" step="0.01" required>
+
+            <label for="nom_mere">Nom de la mère :</label>
+            <input type="text" id="nom_mere" name="nom_mere" required>
+
+            <label for="nom_pere">Nom du père :</label>
+            <input type="text" id="nom_pere" name="nom_pere" required>
+
+            <label for="adresse">Adresse :</label>
+            <textarea id="adresse" name="adresse" rows="3" required></textarea>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </main>
+    <footer>
+        <p>Projet réalisé par le Groupe 10 :</p>
+        <ul class="contributors">
+            <li>ONIQUE SAASITA Mwenge</li>
+            <li>ETSONI ODJEDRA Dieudonné</li>
+            <li>AMANIO PARIO Isaac</li>
+            <li>Hope</li>
+            <li>USHINDI</li>
+            <li>et d'autres</li>
+        </ul>
+        <p>Contacts :</p>
+        <ul class="contacts">
+            <li>WhatsApp</li>
+            <li>Facebook</li>
+            <li>GitHub</li>
+            <li>Telegram</li>
+            <li>et d'autres</li>
+        </ul>
+        <p>Ville : Butembo</p>
+        <p>Connaissances : autres hôpitaux et d'autres</p>
+    </footer>
 </body>
 </html>
